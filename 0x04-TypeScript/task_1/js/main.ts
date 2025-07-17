@@ -19,6 +19,8 @@ const teacher3: Teacher = {
 
 console.log(teacher3);
 
+// --------------------------------------------------
+
 // Task 2. Extending the Teacher Interface
 
 // Directors interface extending Teacher
@@ -36,3 +38,16 @@ const director1: Directors = {
 };
 
 console.log(director1);
+
+// --------------------------------------------------
+
+// Task #3: Printing Teachers
+interface printTeacherFunction {
+  (firstName: string, lastName: string): string;
+}
+
+const printTeacher: printTeacherFunction = (firstName, lastName) => {
+  return `${firstName.charAt(0)}. ${lastName}`;
+};
+
+console.log(printTeacher("John", "Doe"));
