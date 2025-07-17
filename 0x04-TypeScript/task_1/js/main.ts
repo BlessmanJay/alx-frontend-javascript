@@ -1,4 +1,4 @@
-// Defining the Teacher interface
+// Task 1. Defining the Teacher interface
 interface Teacher {
   readonly firstName: string;
   readonly lastName: string;
@@ -11,10 +11,28 @@ interface Teacher {
 // Creating the Teacher object using the interface
 const teacher3: Teacher = {
   firstName: "John",
-  lastName: "Doe",
   fullTimeEmployee: false,
-  location: "london",
+  lastName: "Doe",
+  location: "London",
   contract: false,
 };
 
 console.log(teacher3);
+
+// Task 2. Extending the Teacher Interface
+
+// Directors interface extending Teacher
+interface Directors extends Teacher {
+  numberOfReports: number;
+}
+
+// Example object using Directors interface
+const director1: Directors = {
+  firstName: "John",
+  fullTimeEmployee: true,
+  lastName: "Doe",
+  location: "London",
+  numberOfReports: 17,
+};
+
+console.log(director1);
