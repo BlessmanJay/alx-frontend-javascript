@@ -94,3 +94,4 @@ function teachClass(todayClass: Subjects): string {
 // Test cases
 console.log(teachClass("Math")); // Teaching Math
 console.log(teachClass("History")); // Teaching History
+todayClass:Subjects
